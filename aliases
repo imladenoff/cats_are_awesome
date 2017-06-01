@@ -1,0 +1,19 @@
+# Usage: gca 'your_full_name' 'your_email'
+# Make sure to thank David Dobrynin
+
+function gca {
+git filter-branch -f --env-filter "GIT_AUTHOR_NAME='$1'; GIT_AUTHOR_EMAIL='$2'; GIT_COMMITTER_NAME='$1'; GIT_COMMITTER_EMAIL='$2';"
+}
+
+alias sl="ls"
+alias ls="ls -a"
+alias irb="pry"
+alias be="bundle exec"
+alias ber="bundle exec rspec"
+
+alias gi="git init"
+alias gaa="git add -A"
+alias gcm="git commit -m"
+alias gp="git push"
+
+# For my eternal respect, dare to push your own changes into this repo
