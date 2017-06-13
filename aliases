@@ -11,9 +11,20 @@ alias irb="pry"
 alias be="bundle exec"
 alias ber="bundle exec rspec"
 
+# git shortcuts
 alias gi="git init"
 alias gaa="git add -A"
 alias gcm="git commit -m"
+alias gcam="git add -A; git commit -m"
 alias gp="git push"
+alias gc="git checkout"
+alias gcb="git checkout -b"
+alias gm="git merge"
+
+# if using app academy dot files, allows for tab completion.
+__git_complete gp _git_push
+__git_complete gc _git_checkout
+__git_complete gm _git_merge
+__git_complete gp _git_push
 
 # For my eternal respect, dare to push your own changes into this repo
