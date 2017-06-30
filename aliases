@@ -6,7 +6,7 @@ git filter-branch -f --env-filter "GIT_AUTHOR_NAME='$1'; GIT_AUTHOR_EMAIL='$2'; 
 }
 
 # mkdir and immediately cd into it
-function mkdcd {
+function mkcd {
 mkdir "$1" && cd "$1";
 }
 
